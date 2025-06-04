@@ -1,0 +1,28 @@
+
+$color-principal: #4a90e2;
+$color-secundario: #34495e;
+$fuente-principal: 'Arial', sans-serif;
+$tamaño-grande: 2rem;
+
+
+body {
+  font-family: $fuente-principal;
+  color: $color-secundario;
+  
+  h1 {
+    color: $color-principal;
+  }
+}
+
+.navbar {
+  background-color: $color-secundario;
+}
+
+.btn-primary {
+  background-color: $color-principal;
+  border: none;
+
+  &:hover {
+    background-color: darken($color-principal, 10%);
+  }
+}
