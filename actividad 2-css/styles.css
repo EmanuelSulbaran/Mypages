@@ -1,0 +1,168 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  /* NAVBAR */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem;
+    transition: color 0.3s;
+  }
+  
+  .menu li a:hover {
+    color: #00d4ff;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #222;
+    display: none;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+  
+  .dropdown:hover .submenu {
+    display: flex;
+  }
+  
+  /* SECCIONES */
+  .seccion {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .fondo { 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .claro {
+    background-color: #f4f4f4;
+    color: #222;
+  }
+  
+  #inicio {
+    background-image: url('./fondo.jpg');
+  }
+  
+  #proyecto1 {
+    background-image: url('./fondo2.webp');
+  }
+  
+  #habilidades {
+    background-image: url('./fondo3.png');
+  }
+  
+  /* CONTENIDO */
+  .contenido {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  h1, h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.1rem;
+  }
+  
+  .habilidades {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #111;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  /* ANIMACIONES */
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+      background: #000;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
