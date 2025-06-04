@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Búsqueda Avanzada</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+
+    .nav {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #1a0dab;
+      font-size: 14px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 16px;
+      border: 1px solid #dfe1e5;
+      border-radius: 4px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    .buttons input {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .buttons input:hover {
+      background-color: #155ab6;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="./index.html">Volver a búsqueda</a>
+  </div>
+
+  <h2>Búsqueda Avanzada</h2>
+
+  <form action="https://www.google.com/search" method="GET">
+    <label for="all">Todas estas palabras:</label>
+    <input type="text" name="as_q" id="all">
+
+    <label for="exact">Esta palabra o frase exacta:</label>
+    <input type="text" name="as_epq" id="exact">
+
+    <label for="any">Cualquiera de estas palabras:</label>
+    <input type="text" name="as_oq" id="any">
+
+    <label for="none">Ninguna de estas palabras:</label>
+    <input type="text" name="as_eq" id="none">
+
+    <div class="buttons">
+      <input type="submit" value="Búsqueda avanzada">
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Google Búsqueda</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 15%;
+    }
+    input[type="text"] {
+      width: 50%;
+      padding: 12px;
+      border-radius: 24px;
+      border: 1px solid #dfe1e5;
+      font-size: 16px;
+      outline: none;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    .buttons input {
+      background-color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .buttons input:hover {
+      border: 1px solid #c6c6c6;
+    }
+    .nav {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+    .nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #1a0dab;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="./search-images.html">Búsqueda de imágenes</a>
+    <a href="./advanced-search.html">Búsqueda avanzada</a>
+  </div>
+  <form action="https://www.google.com/search" method="GET">
+    <input type="text" name="q" placeholder="Buscar en Google...">
+    <div class="buttons">
+      <input type="submit" value="Buscar con Google">
+    </div>
+  </form>
+  <form action="https://www.google.com/search" method="GET">
+    <input type="hidden" name="btnI" value="1">
+    <input type="text" name="q" placeholder="Me siento afortunado..." style="display: none;">
+    <div class="buttons">
+      <input type="submit" value="Me siento afortunado">
+    </div>
+  </form>
+</body>
+</html>
